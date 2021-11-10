@@ -1,4 +1,7 @@
 <?php
+/*
+* Requerimos los datos de navegacion pertinentes.
+*/
 
 echo <<<EOF
 
@@ -49,17 +52,19 @@ echo <<<EOF
 
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+			<li class="nav-item active">
+			<a class="nav-link" href="https://localhost/assembler/einar_projects/cms-php/public/index.php">Home <span class="sr-only">(current)</span></a>
+			</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://localhost/assembler/einar_projects/cms-php/public/about-us.php">About us</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://localhost/assembler/einar_projects/cms-php/public/contact-us.php">Contact us</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		</li>
+			<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">Dropdown</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 						<a class="dropdown-item" href="#">Action</a>
@@ -79,6 +84,11 @@ echo <<<EOF
 
 	<form>
 	<div class="form-group">
+	<div class="starter-template">
+            <h1>About us</h1>
+			<p class="lead">Please, insert your personal data</p>
+		</div>
+
 	  <label for="exampleInputEmail1">Email address</label>
 	  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 	  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -89,7 +99,7 @@ echo <<<EOF
 	</div>
 	<div class="form-check">
 	  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-	  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+	  <label class="form-check-label" for="exampleCheck1">Remember me</label>
 	</div>
 	<button type="submit" class="btn btn-primary">Submit</button>
   </form>
