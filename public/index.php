@@ -16,3 +16,29 @@ if ($section == 'about-us') {
 	include 'controller/homePage.php';
 	debug_to_console('homePage.php CONTROLLER included into index.php');
 }
+
+
+class Customer
+{
+	/*Props - Those can be seted default or only declared*/
+
+	//PUBLIC	-	All access
+	//PRIVATE	-	Class access
+	//PROTECTED	-	Extennds class access
+
+	public $id;
+	public $name;
+	public $email;
+	public $balance;
+
+
+	/*Meths*/
+
+
+	//Example 1	-	Acces to a prop of a class.
+	public function getCustomer($id)
+	{
+
+		$this->id = $id;
+	}
+}
