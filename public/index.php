@@ -26,7 +26,7 @@ class Customer
 	//PRIVATE	-	Class access
 	//PROTECTED	-	Extennds class access
 
-	public $id = 1;
+	public $id;
 	public $name;
 	public $email;
 	public $balance;
@@ -34,14 +34,26 @@ class Customer
 
 	/*Meths*/
 
+	//Example Magical Functions	-
+	public function __construct()
+	{
+		echo ' >>Constructor';
+		debug_to_console('This constructor will always initialize in FIRST place when we instance a class');
+	}
+	public function __destruct()
+	{
+		echo ' >>Destructor';
+		debug_to_console('This destructor will always initialize at ENDING place when we instance a class');
+	}
 
-	//Example 1	-	Acces to a prop of a class.
+
+	//Example Interaction with Class	-	Acces to a prop of a class.
 	public function getCustomer($id)
 	{
 
 		$this->id = $id;
-		// return 'Einar';
-		return $this->id;
+		return ' >>Einar';
+		// return $this->id;
 	}
 }
 
