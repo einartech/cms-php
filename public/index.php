@@ -26,10 +26,10 @@ class Customer
 	//PRIVATE	-	Class access
 	//PROTECTED	-	Extennds class access
 
-	public $id;
-	public $name;
-	public $email;
-	public $balance;
+	private $id;
+	private $name;
+	private $email;
+	private $balance;
 
 
 	/*Meths*/
@@ -52,5 +52,5 @@ class Customer
 
 $customer = new Customer(1, 'Einar Sanchez', 'einartech@gmail.com', 0);
 
-echo $customer->name;
+// echo $customer->name;
 echo $customer->getEmail();
