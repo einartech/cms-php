@@ -28,7 +28,7 @@ class Customer
 
 	private $id;
 	private $name;
-	private $email;
+	protected $email;
 	private $balance;
 
 
@@ -50,7 +50,25 @@ class Customer
 }
 
 
-$customer = new Customer(1, 'Einar Sanchez', 'einartech@gmail.com', 0);
+// $customer = new Customer(1, 'Einar Sanchez', 'einartech@gmail.com', 0);
 
-// echo $customer->name;
-echo $customer->getEmail();
+// // echo $customer->name;
+// echo $customer->getEmail();
+
+class Subscriber extends Customer
+{
+	/*Props*/
+	public $plan;
+
+	/*Meths*/
+	public function __construct($id, $name, $email, $balance, $plan)
+	{
+		parent::__construct($id, $name, $email, $balance);
+		$this->plan = $plan;
+	}
+
+	public function getEmail()
+	{
+		return $this->email;
+	}
+}
