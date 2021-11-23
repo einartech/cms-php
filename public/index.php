@@ -35,33 +35,22 @@ class Customer
 	/*Meths*/
 
 	//Example Magical Functions	-
-	public function __construct()
+	public function __construct($id, $name, $email, $balance)
 	{
-		echo ' >>Constructor';
-		debug_to_console('This constructor will always initialize in FIRST place when we instance a class');
-	}
-	public function __destruct()
-	{
-		echo ' >>Destructor';
-		debug_to_console('This destructor will always initialize at ENDING place when we instance a class');
+		$this->id 		= $id;
+		$this->name 	= $name;
+		$this->email 	= $email;
+		$this->balance 	= $balance;
 	}
 
-
-	//Example Interaction with Class	-	Acces to a prop of a class.
-	public function getCustomer($id)
+	public function getEmail()
 	{
-
-		$this->id = $id;
-		return ' >>Einar';
-		// return $this->id;
+		return $this->email;
 	}
 }
 
 
-$customer = new Customer;
+$customer = new Customer(1, 'Einar Sanchez', 'einartech@gmail.com', 0);
 
-/*Instance the class prop*/
-// echo $customer->id;
-
-/*Instance the class meth*/
-echo $customer->getCustomer(3);
+echo $customer->name;
+echo $customer->getEmail();
