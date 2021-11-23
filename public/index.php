@@ -44,7 +44,11 @@ class Customer
 	}
 }
 
-/*Instance the class*/
 
 $customer = new Customer;
+
+/*Instance the class prop*/
 echo $customer->id;
+
+/*Instance the class meth*/
+echo $customer->getCustomer(3);
