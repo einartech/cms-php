@@ -40,7 +40,8 @@ class Customer
 	{
 
 		$this->id = $id;
-		return 'Einar';
+		// return 'Einar';
+		return $this->id;
 	}
 }
 
@@ -48,7 +49,7 @@ class Customer
 $customer = new Customer;
 
 /*Instance the class prop*/
-echo $customer->id;
+// echo $customer->id;
 
 /*Instance the class meth*/
 echo $customer->getCustomer(3);
