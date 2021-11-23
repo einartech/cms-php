@@ -26,7 +26,7 @@ class Customer
 	//PRIVATE	-	Class access
 	//PROTECTED	-	Extennds class access
 
-	public $id;
+	public $id = 1;
 	public $name;
 	public $email;
 	public $balance;
@@ -40,5 +40,11 @@ class Customer
 	{
 
 		$this->id = $id;
+		return 'Einar';
 	}
 }
+
+/*Instance the class*/
+
+$customer = new Customer;
+echo $customer->id;
